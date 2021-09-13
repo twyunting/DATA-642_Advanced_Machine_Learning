@@ -1,0 +1,17 @@
+---
+title: "Advanced Machine Learning - HW1"
+author: "Yunting Chiu"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+![](pics/ex1.png)
+![](pics/ex2.png)
+![](pics/ex3.png)
+![](pics/ex4.png)
+![](pics/ex5.png)
+![](pics/ex6.png)
