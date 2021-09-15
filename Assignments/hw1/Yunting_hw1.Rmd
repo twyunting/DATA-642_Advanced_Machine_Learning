@@ -23,7 +23,7 @@ $$
 V^TAV = \lambda V^T V  = \lambda ||V||^2\tag{1.2}
 $$
 
-Because $A$ is positive definite so the left hand side is positive, and $V$ is an non-zero eigenvector. Also, the length $||V||^2$ must be positive, we can derive the eigenvalues of a symmetric positive matrix $\lambda$ is positive. It follows that every eigenvalue $\lambda$ of $A$ is real.
+Because $A$ is positive definite so the left hand side is positive, and $V$ is a non-zero eigenvector. Also, the length $||V||^2$ must be a positive, we can derive the eigenvalues of a symmetric positive matrix $\lambda$ is positive. It follows that every eigenvalue $\lambda$ of $A$ is real.
 $$
 \lambda = \frac{V^TAV}{||V||^2} > 0\tag{1.3}
 $$
