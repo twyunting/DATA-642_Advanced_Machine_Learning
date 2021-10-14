@@ -1,0 +1,20 @@
+N=30;
+K=5;
+l=100;
+rep = 500;
+
+theta = zeros(l,1);
+theta(1:K) = randn(K,1);
+%disp(theta)
+X = randn(N,l)*(1/sqrt(N));
+y = X*theta;
+%disp(size(y))
+
+% Question (a)
+%sols = SolveLasso(X, y);
+%error =norm(sols-theta);
+%disp(error)
+
+P = randperm(N*l)
+%disp(P)
+
