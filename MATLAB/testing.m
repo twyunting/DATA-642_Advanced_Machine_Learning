@@ -17,6 +17,8 @@ y = X*theta;
 
 P = randperm(N*l)
 %disp(P)
+
+
 % Question (d)
 p = [1,9,25,36,64];
 Err = zeros(rep,1);
@@ -38,4 +40,14 @@ while ~OK
 end
 
 y = X*theta;
+
+sols = SolveLasso(X, y,length(theta),'lasso');
+errorX =norm(sols-theta);
+% disp(errorA)
+    
+Err(epan) = errorX<10^(-8) + 0;
+end
+probsparse = sum(Err)/rep; 
+fprintf('Sparse Sensing Mtx, p=%i: %2.2f \n',pval,probsparse)
+
 

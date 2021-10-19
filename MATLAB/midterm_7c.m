@@ -1,4 +1,8 @@
 % Question (d)
+rep = 500
+N = 30 
+k = 5
+l = 100 
 p = [1,9,25,36,64];
 Err = zeros(rep,1);
 for pval = p
@@ -18,7 +22,7 @@ while ~OK
     OK = rank(X)==N; 
 end
 
-y = X*theta;
+%y = X*theta;
 
 sols = SolveLasso(X, y,length(theta),'lasso');
 errorX =norm(sols-theta);
